@@ -31,8 +31,9 @@ module.exports = () => {
         name: 'text-editor',
         short_name: 'JATE',
         description: 'Just Another Text Editor',
-        background_color: '#225ca3',
-        theme_color: '#225ca3',
+        background_color: '#282A36',
+        theme_color: '#6c81f7',
+        id: '/',
         start_url: '/',
         publicPath: '/',
         icons: [
