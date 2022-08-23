@@ -33,8 +33,8 @@ export const getAllDb = async () => {
   const request = store.getAll();
   const result = await request;
   console.log('data received from JATEdb', result);
-  // return result;
-  return result[0].value;
+  // return result;  // *does not* return stored note
+  return result[0].value; // returns stored notes
 };
 
 initdb();
