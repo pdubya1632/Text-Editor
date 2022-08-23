@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 require('dotenv').config();
 
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 8000;
 
 app.use(express.static('../client/dist'));
 app.use(express.urlencoded({ extended: true }));
@@ -10,6 +10,4 @@ app.use(express.json());
 
 require('./routes/htmlRoutes')(app);
 
-app.listen(PORT, () =>
-  console.log(`Now listening on port: http://localhost:${PORT}`)
-);
+app.listen(PORT, () => console.log(`Now listening on port: ${PORT}`));
